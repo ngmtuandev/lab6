@@ -4,7 +4,7 @@ const ScreenOne = ({navigation}) => {
     return (
         <View>
             <Text>Welcome you to coffee bat on</Text>
-            <Pressable onPress={() => navigation.navigate("list")}>Go to coffee</Pressable>
+            <Pressable onPress={() => navigation.navigate("List")}><Text>Go to coffee</Text></Pressable>
         </View>
     )
 }

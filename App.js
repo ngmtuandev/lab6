@@ -5,14 +5,18 @@ import ScreenOne from './src/ScreenOne';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ScreenTwo from './src/ScreenTwo';
+import ScreenThree from './src/ScreenThree';
+import ScreenFour from './src/ScreenFour';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={ScreenOne} />
+        {/* <Stack.Screen name="Home" component={ScreenOne} /> */}
         <Stack.Screen name="List" component={ScreenTwo} />
+        <Stack.Screen name="Products" component={ScreenThree} />
+        <Stack.Screen name="Item" component={ScreenFour} />
       </Stack.Navigator>
     </NavigationContainer>
   );
